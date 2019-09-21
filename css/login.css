@@ -1,0 +1,49 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-image: url("https://source.unsplash.com/1366x768/?nature,water");
+}
+
+.margin-7 {
+  margin: 7% auto;
+}
+.margin-auto {
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+  font-weight: 800;
+  color: white;
+}
+
+label{
+  color: white;
+}
+
+.btn{
+  width: 100px;
+  margin: auto;
+}
+
+.card{
+  margin: auto;
+}
+
+.bg-primary {
+  background-color: #2a5fa7;
+}
+
+.bg-grey{
+  background-color: #262626;
+}
+
+.btn-primary {
+  background-color: #2a5fa7;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color: #5d90cf;
+}
+
+.btn-primary:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(42, 95, 167, 0.5);
+  box-shadow: 0 0 0 0.2rem rgba(42, 96, 167, 0.5);
+}
