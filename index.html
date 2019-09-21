@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Sera5.ID - Hosting</title>
+    <title>Sera5.ID - Main</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/overlay.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,6 +42,7 @@
         </div>
     </div>
   
+  <!-- ARTICLE CATEGORY NAVBAR -->
   <div class="align-items-center bg-transparent m-2">
     <div class="container">
       <ul class="nav justify-content-center">
@@ -72,100 +74,117 @@
     </div>
   </div>
 
-  <!-- Source : https://profitworks.ca/blog/297-why-having-a-website-is-important -->
-  <section class="bg-main p-4">
+  
+  <!-- POPULAR ARTICLE -->
+  <section class="bg-main p-5">
     <div class="container-fluid">
       <h1 class="text-center text-info mb-3">Popular Article</h1>
-
-      <div id="carouselExampleControls" class="carousel slide bg-main p-5" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row">
+      <div id="carouselControls" class="carousel slide bg-main p-5" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a class="text-primary" href="#">
+              <div class="row text-dark">
                 <div class="col-5">
                   <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
                 </div>
                 <div class="col-7">
                   <h3 class="text-center">The Importance of a Website for Your Business Success</h3>
                   <br>
-                  <p>Most consumers are looking online for information that will help them 
+                  <p>
+                    Most consumers are looking online for information that will help them 
                     make smarter purchasing decisions. In fact, according to the 
                     eCommerce Foundation, 88% of consumers will research product 
                     information before they make a purchase online or in the store. 
                     This buying behavior trend emphasizes the importance of a website for today’s businesses.
-                    <a class="text-primary" href="#">Read More</a>
+                    <span class="text-primary">Read More</span>
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row h-100">
-                <div class="col-5">
-                  <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
-                </div>
-                <div class="col-7">
-                  <h3 class="text-center">The Importance of a Website for Your Business Success</h3>
-                  <br>
-                  <p>Most consumers are looking online for information that will help them 
-                    make smarter purchasing decisions. In fact, according to the 
-                    eCommerce Foundation, 88% of consumers will research product 
-                    information before they make a purchase online or in the store. 
-                    This buying behavior trend emphasizes the importance of a website for today’s businesses.
-                    <a class="text-primary" href="#">Read More</a>
-                  </p>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <div class="carousel-item">
+              <a class="text-primary" href="#">
+                <div class="row text-dark">
+                  <div class="col-5">
+                    <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
+                  </div>
+                  <div class="col-7">
+                    <h3 class="text-center">The Importance of a Website for Your Business Success</h3>
+                    <br>
+                    <p>
+                      Most consumers are looking online for information that will help them 
+                      make smarter purchasing decisions. In fact, according to the 
+                      eCommerce Foundation, 88% of consumers will research product 
+                      information before they make a purchase online or in the store. 
+                      This buying behavior trend emphasizes the importance of a website for today’s businesses.
+                      <span class="text-primary">Read More</span>
+                    </p>
+                  </div>
+                </div>
+              </a>
+          </div>
+        </div>
+          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
       </div>
-
     </div>
   </section>
 
-  <section>
+  <!-- FEATURED ARTICLE -->
+  <section class="p-5">
     <h1 class="text-center text-primary mb-5">Featured Articles</h1>
     <div class="container-fluid">
-    <div class="row">
-      <div class="col-5">
-        <div class="card p-3">
-          <img src="img/user-default.png" class="img-fluid b-logo rounded mx-auto d-block card-img-top" width="100%">  
-          <div class="card-footer">
-            <h2 class="text-center">ARTICLE TITLE</h5>
-            <br>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting 
-                industry. Lorem Ipsum has been the industry's standard dummy text 
-                ever since the 1500s, when an unknown printer took a galley of type 
-                and scrambled it to make a type specimen book. It has survived not only 
-                five centuries, but also the leap into electronic typesetting, remaining 
-                essentially unchanged. 
-                <a class="text-primary" href="#">Read More</a>
-            </p>
+      <div class="row">
+
+        <!-- MAIN FEATURED ARTICLE -->
+        <div class="col-5">
+          <div class="image-container">
+            <div class="card p-3 border-right">
+              <a href="#" class="overlay-slide">
+                  <div href="#" class="overlay-text">Read More</div>
+              </a>
+              <img src="img/user-default.png" class="img-fluid b-logo rounded mx-auto d-block card-img-top" width="100%">  
+              <div class="card-footer">
+                <h2 class="text-center">ARTICLE TITLE</h5>
+                <br>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting 
+                    industry. Lorem Ipsum has been the industry's standard dummy text 
+                    ever since the 1500s, when an unknown printer took a galley of type 
+                    and scrambled it to make a type specimen book. It has survived not only 
+                    five centuries, but also the leap into electronic typesetting, remaining 
+                    essentially unchanged. 
+                    <a class="text-primary" href="#">Read More</a>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="col-7 p-3">
-        <div class="container-fluid">
+
+        <!-- SMALLER FEATURED ARTICLE -->
+        <!-- ARTICLE 1 -->
+        <div class="col-7 p-3">
+          <div class="container-fluid">
             <div class="row">
               <div class="col-7">
                 <h1>Article Title</h1>
+                <hr>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
                 industry.</p>
               </div>
               <div class="col-5">
                   <img src="img/user-default.png" class="img-fluid b-logo rounded mx-auto d-block" width="80%">
               </div>
-            </div>
-        </div>
-        <br>  
-        <div class="container-fluid">
+          </div>
+          <hr>  
+          <!-- ARTICLE 2 -->
+          <div class="container-fluid">
             <div class="row">
               <div class="col-5">
                 <img src="img/user-default.png" class="img-fluid b-logo rounded mx-auto d-block" width="80%">
@@ -176,9 +195,10 @@
                 industry.</p>
               </div>
             </div>
-        </div>
-        <br>
-        <div class="container-fluid">
+          </div>
+          <hr>  
+          <!-- ARTICLE 3 -->
+          <div class="container-fluid">
             <div class="row">
               <div class="col-7">
                 <h1>Article Title</h1>
@@ -189,47 +209,54 @@
                   <img src="img/user-default.png" class="img-fluid b-logo rounded mx-auto d-block" width="80%">
               </div>
             </div>
+          </div>
         </div>
+      <!-- END ROW -->
       </div>
     </div>
+  </section>
 
-    <!-- GRID ARTICLES -->
+
+  <!-- GRID ARTICLES -->
+  <section class="bg-main">
+    <h1 class="text-center text-primary mb-5">Other Interesting Articles</h1>
     <div class="container">
-        <div class="card-columns">
-          <a class="card bg-primary" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 1</p>
-            </div>
-          </a>
-          <a class="card bg-warning" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 2</p>
-            </div>
-          </a>
-          <a class="card bg-success" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 3</p>
-            </div>
-          </a>
-          <a class="card bg-danger" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 4</p>
-            </div>
-          </a>  
-          <a class="card bg-light" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 5</p>
-            </div>
-          </a>
-          <a class="card bg-info" href="#">
-            <div class="card-body text-center">
-                <p class="card-text">Article 6</p>
-            </div>
-          </a>
-        </div>
+      <div class="card-columns">
+        <a class="card bg-primary" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 1</p>
+          </div>
+        </a>
+        <a class="card bg-warning" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 2</p>
+          </div>
+        </a>
+        <a class="card bg-success" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 3</p>
+          </div>
+        </a>
+        <a class="card bg-danger" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 4</p>
+          </div>
+        </a>  
+        <a class="card bg-light" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 5</p>
+          </div>
+        </a>
+        <a class="card bg-info" href="#">
+          <div class="card-body text-center">
+            <p class="card-text">Article 6</p>
+          </div>
+        </a>
       </div>
-</section>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
   <section id="footer" class="section-padding">
     <div class="container">
         <div class="row">
