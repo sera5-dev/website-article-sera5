@@ -7,53 +7,115 @@
     <meta name="description" content="">
     <title>Sera5.ID - Article</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
+    <link href="css/overlay.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="text-left bg-dark">
-    <a class="navbar-brand" href="#"><img src="img/logo-ligt.png" width="150px"></a>
-    <!-- Nav Item - User Information -->
-        <a class="navbar-brand dropdown-toggle to-right" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="mr-2 d-none d-lg-inline text-white small">Account</span>
-          <img class="img-profile rounded-circle" src="img/user-default.png" width="35px">
-        </a>
-        <!-- Dropdown - User Information -->
-        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            Profile
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-            Settings
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-            Activity Log
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-            Logout
-          </a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo-ligt.png" width="30%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="category-technology.html">technology</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              </form>
         </div>
-    </div>
+      </div>
+    </nav>
 
+    <!-- POPULAR ARTICLE CAROUSEL-->
+    <section class="bg-main section-padding">
+        <div class="section-padding">
+          <div class="container-fluid">
+            <h1 class="text-center text-info mb-3">Featured Articles</h1>
+            <div id="carouselControls" class="carousel slide bg-main p-5" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <a class="text-primary" href="article-sample.html">
+                    <div class="row text-dark">
+                      <div class="col-lg-5 col-md-5 col-sm-12">
+                        <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
+                      </div>
+                      <div class="col-lg-7 col-md-7 col-sm-12">
+                        <h3 class="">The Importance of a Website for Your Business Success</h3>
+                        <p>
+                          Most consumers are looking online for information that will help them 
+                          make smarter purchasing decisions...
+                          <span class="text-primary">Read More</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="carousel-item">
+                    <a class="text-primary" href="#">
+                      <div class="row text-dark">
+                        <div class="col-lg-5 col-md-5 col-sm-12">
+                          <img src="img/404.png" alt="" class="img-fluid b-logo rounded mx-auto d-block">
+                        </div>
+                        <div class="col-lg-7 col-md-7 col-sm-12">
+                          <h3 class="">Lorem Ipsum</h3>
+                          <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting 
+                            industry
+                          </p>
+                        </div>
+                      </div>
+                    </a>
+                </div>
+              </div>
+                <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+            </div>
+          </div>
+        </section>
       
   <!-- Source : https://www.lyfemarketing.com/blog/importance-of-a-website/ -->
   <section class="bg-main p-2">
     <div class="container-fluid">
         <div class="row">
             <!-- Blog Entries Column -->
-            <div class="col-md-8">
+            <div class="col-lg-8 col-md-8 col-sm-12">
               <div class="card my-4">
                 <div class="container-fluid">
                   <h2 class="text-center">Why Having A Website Is Important</h2>
                 </div>
-                <hr>
-                <img src="img/importance-of-a-website.jpg">
+                <p>
+                  <div>
+                    <small>22 september 2019</small>
+                  </div>
+                  <div>
+                    <small>Technology</small>
+                  </div>
+                </p>
+
+                <img src="img/importance-of-a-website.jpg" class="rounded">
                 <p>
                   <br>Most consumers are looking online for information that will 
                   help them make smarter purchasing decisions. In fact, according 
@@ -139,17 +201,6 @@
             <!-- Sidebar Widgets Column -->
             <div class="col-md-4">
       
-              <!-- Search Widget -->
-              <div class="card my-4 p-0">
-                <h5 class="card-header text-center">Search</h5>
-                <div class="card-body">
-                    <form class="form-inline my-2 my-lg-0">
-                      <input class="form-control mr-sm-2" type="text" placeholder="Search Something...">
-                      <button class="btn btn-success my-2 my-sm-0 mx-auto" type="button">Search</button>
-                    </form>
-                </div>
-              </div>
-      
               <!-- Categories Widget -->
               <div class="card my-4 p-0">
                 <h5 class="card-header text-center">Categories</h5>
@@ -196,6 +247,55 @@
                   </div>
                 </div>
               </div>
+
+              <!-- FEATURED CARD -->
+              <div class="card my-4 p-0">
+                  <h5 class="card-header text-center">Related Articles</h5>
+                  <div class="card-body">
+                <!-- Article 1 -->
+                <div class="container-fluid p-0">
+                    <div class="">
+                        <div class="image-container">
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="container p-3">
+                                <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                              </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="container p-3">
+                                <h4 class="">Why Having A Website Is Important</h4>
+                              </div>
+                            </div>
+                            <a href="article-sample.html" class="overlay-fade">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+                 
+                <!-- Article 2 -->
+                <div class="container-fluid p-0">
+                    <div class="">
+                        <div class="image-container">
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="container p-3">
+                                <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                              </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="container p-3">
+                                <h4 class="">Why Having A Website Is Important</h4>
+                              </div>
+                            </div>
+                            <a href="article-sample.html" class="overlay-fade">
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              <!-- END FEATURED CARD -->
       
               <!-- Side Widget
               <div class="card my-4 p-0">
@@ -248,6 +348,7 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>

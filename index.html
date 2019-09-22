@@ -5,286 +5,440 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <title>Sera5.ID - Main</title>
+    <title>Sera5.ID - Articles</title>
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
     <link href="css/overlay.css" rel="stylesheet">
 </head>
 
 <body>
-  <div class="text-left bg-dark">
-    <a class="navbar-brand" href="#"><img src="img/logo-ligt.png" width="150px"></a>
-    <!-- Nav Item - User Information -->
-        <a class="navbar-brand dropdown-toggle to-right" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <span class="mr-2 d-none d-lg-inline text-white small">Account</span>
-          <img class="img-profile rounded-circle" src="img/user-default.png" width="35px">
-        </a>
-        <!-- Dropdown - User Information -->
-        <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-            Profile
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
-            Settings
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
-            Activity Log
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
-            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
-            Logout
-          </a>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="img/logo-ligt.png" width="30%"></a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="category-technology.html">technology</a>
+                </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">unfinished</a>
+            </li>
+            <form class="form-inline">
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+              </form>
         </div>
-    </div>
-  
-  <!-- ARTICLE CATEGORY NAVBAR -->
-  <div class="align-items-center bg-transparent m-2">
-    <div class="container">
-      <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link text-black" href="category-technology.html">TECHNOLOGY 
-              <span class="badge badge-primary badge-pill">1</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">UNFINISHED
-              <span class="badge badge-primary badge-pill">0</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">UNFINISHED
-              <span class="badge badge-primary badge-pill">0</span>
-          </a>
-        </li>
-        <li class="nav-item mr-auto">
-          <a class="nav-link disabled" href="#">UNFINISHED
-              <span class="badge badge-primary badge-pill">0</span>
-          </a>
-        </li>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="text" placeholder="Search">
-          <button class="btn btn-success my-2 my-sm-0" type="button">Search</button>
-        </form>
-      </ul>
-    </div>
-  </div>
-
-  
-  <!-- POPULAR ARTICLE -->
-  <section class="bg-main p-5">
-    <div class="container-fluid">
-      <h1 class="text-center text-info mb-3">Popular Article</h1>
-      <div id="carouselControls" class="carousel slide bg-main p-5" data-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a class="text-primary" href="article-sample.html">
-              <div class="row text-dark">
-                <div class="col-5">
-                  <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
-                </div>
-                <div class="col-7">
-                  <h3 class="text-center">The Importance of a Website for Your Business Success</h3>
-                  <br>
-                  <p>
-                    Most consumers are looking online for information that will help them 
-                    make smarter purchasing decisions. In fact, according to the 
-                    eCommerce Foundation, 88% of consumers will research product 
-                    information before they make a purchase online or in the store. 
-                    This buying behavior trend emphasizes the importance of a website for today’s businesses.
-                    <span class="text-primary">Read More</span>
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="carousel-item">
-            <a class="text-primary" href="#">
-              <div class="row text-dark">
-                <div class="col-5">
-                  <img src="img/404.png" alt="" class="img-fluid b-logo rounded mx-auto d-block">
-                </div>
-                <div class="col-7">
-                  <h3 class="text-center">Lorem Ipsum</h3>
-                  <br>
-                  <p>
-                      Lorem Ipsum is simply dummy text of the printing and typesetting 
-                      industry
-                  </p>
-                </div>
-              </div>
-            </a>
-          </div>
-        </div>
-          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- FEATURED ARTICLE -->
-  <section>
-    <h1 class="text-center text-primary mb-5">Featured Articles</h1>
-    <div class="container-fluid">
-      <div class="row">
-
-        <!-- MAIN FEATURED ARTICLE -->
-        <div class="col-5">
-          <div class="container-fluid pt-3">
-            <div class="image-container">
-              <a href="#" class="overlay-slide">
-                  <div class="overlay-text">Read More</div>
-              </a>
-              <div class="container-fluid p-3">
-                <img src="img/404.png" class="img-fluid b-logo rounded mx-auto d-block card-img-top" width="100%">  
-              </div>
-              <div class="container-fluid pt-5">
-                <h2 class="text-center">ARTICLE TITLE</h5>
-                <br>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry. Lorem Ipsum has been the industry's standard dummy text 
-                    ever since the 1500s, when an unknown printer took a galley of type 
-                    and scrambled it to make a type specimen book. It has survived not only 
-                    five centuries, but also the leap into electronic typesetting, remaining 
-                    essentially unchanged. 
-                    <a class="text-primary" href="#">Read More</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- SMALLER FEATURED ARTICLE -->
-        <div class="col-7 p-3">
-          <!-- ARTICLE 1 -->
-          <div class="container-fluid">
-            <div class="image-container border-bottom">
-              <div class="row">
-                <div class="col-7">
-                  <div class="container-fluid p-3">
-                    <h4 class="text-center">Why Having A Website Is Important</h4>
+  <!-- POPULAR ARTICLE CAROUSEL-->
+  <section class="bg-main section-padding">
+    <div class="section-padding">
+      <div class="container-fluid">
+        <h1 class="text-center text-info mb-3">Featured Articles</h1>
+        <div id="carouselControls" class="carousel slide bg-main p-5" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <a class="text-primary" href="article-sample.html">
+                <div class="row text-dark">
+                  <div class="col-lg-5 col-md-5 col-sm-12">
+                    <img src="img/importance-of-a-website.jpg" alt="" class="img-fluid b-logo rounded mx-auto d-block">
+                  </div>
+                  <div class="col-lg-7 col-md-7 col-sm-12">
+                    <h3 class="">The Importance of a Website for Your Business Success</h3>
                     <p>
-                      Most consumers are looking online for information 
-                      that will help them make smarter purchasing decisions. 
-                      In fact, according to the eCommerce Foundation 
+                      Most consumers are looking online for information that will help them 
+                      make smarter purchasing decisions...
                       <span class="text-primary">Read More</span>
                     </p>
                   </div>
                 </div>
-                <div class="col-5">
-                  <div class="container-fluid p-3">
-                    <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+              </a>
+            </div>
+            <div class="carousel-item">
+                <a class="text-primary" href="#">
+                  <div class="row text-dark">
+                    <div class="col-lg-5 col-md-5 col-sm-12">
+                      <img src="img/404.png" alt="" class="img-fluid b-logo rounded mx-auto d-block">
+                    </div>
+                    <div class="col-lg-7 col-md-7 col-sm-12">
+                      <h3 class="">Lorem Ipsum</h3>
+                      <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting 
+                        industry
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <a href="article-sample.html" class="overlay-slide">
-                    <div class="overlay-text">Read More</div>
                 </a>
-              </div>
             </div>
           </div>
-          <!-- END ARTICLE 1   -->
-          <!-- ARTICLE 2 -->
-          <div class="container-fluid border-bottom">
-            <div class="image-container">
-              <div class="row">
-                <div class="col-5">
-                  <div class="container-fluid p-3">
-                    <img src="img/404.png" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
-                  </div>
-                </div>
-                <div class="col-7">
-                  <div class="container-fluid p-3">
-                    <h2 class="text-center">Article Title</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry.</p>
-                  </div>
-                </div>
-                <a href="#" class="overlay-slide">
-                    <div class="overlay-text">Read More</div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- END ARTICLE 2   -->
-          <!-- ARTICLE 3 -->
-          <div class="container-fluid">
-            <div class="image-container">
-              <div class="row">
-                <div class="col-7">
-                  <div class="container-fluid p-3">
-                    <h2 class="text-center">Article Title</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting 
-                    industry.</p>
-                  </div>
-                </div>
-                <div class="col-5">
-                  <div class="container-fluid p-3">
-                    <img src="img/404.png" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
-                  </div>
-                </div>
-                <a href="#" class="overlay-slide">
-                    <div class="overlay-text">Read More</div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <hr>
-          <!-- END ARTICLE 3   -->
-      <!-- END ROW -->
+            <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- FEATURED AND LATEST SECTION -->
+    <section class="bg-main p-3">
+        <div class="row">
 
-  <!-- GRID ARTICLES -->
-  <section class="bg-main">
-    <h1 class="text-center text-primary mb-5">Other Interesting Articles</h1>
-    <div class="container">
-      <div class="card-columns">
-        <a class="card bg-primary" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 1</p>
+          <!-- LEFT SIDE COLUMN -->
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <!-- LATEST ARTICLE -->
+            <div class="card my-4 p-0">
+                <h1 class="card-header text-center">Latest Articles</h1>
+                <div class="card-body">
+              
+              <div class="container">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="image-container">
+                      <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="container-fluid p-2">
+                            <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                          </div>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="container-fluid p-2">
+                            <h4 class="">Why Having A Website Is Important</h4>
+                            <p>
+                              <div>
+                                <small>22 september 2019</small>
+                              </div>
+                              <div>
+                                <small>Technology</small>
+                              </div>
+                            </p>
+                          </div>
+                        </div>
+                        <a href="article-sample.html" class="overlay-fade">
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              
+              <div class="container">
+                  <div class="card-columns">
+                      <div class="container-fluid p-0">
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="image-container">
+                              <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                  <div class="container-fluid p-3">
+                                    <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                  </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                  <div class="container-fluid p-3">
+                                    <h4 class="">Why Having A Website Is Important</h4>
+                                    <p>
+                                      <div>
+                                        <small>22 september 2019</small>
+                                      </div>
+                                      <div>
+                                        <small>Technology</small>
+                                      </div>
+                                    </p>
+                                  </div>
+                                </div>
+                                <a href="article-sample.html" class="overlay-fade">
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      <div class="container-fluid p-0">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <div class="image-container">
+                                <div class="row">
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="container-fluid p-3">
+                                      <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                    </div>
+                                  </div>
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="container-fluid p-3">
+                                      <h4 class="">Why Having A Website Is Important</h4>
+                                      <p>
+                                          <div>
+                                            <small>22 september 2019</small>
+                                          </div>
+                                          <div>
+                                            <small>Technology</small>
+                                          </div>
+                                        </p>
+                                    </div>
+                                  </div>
+                                  <a href="article-sample.html" class="overlay-fade">
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      <div class="container-fluid p-0">
+                              <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="image-container">
+                                  <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <div class="container-fluid p-3">
+                                        <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                      <div class="container-fluid p-3">
+                                        <h4 class="">Why Having A Website Is Important</h4>
+                                        <p>
+                                            <div>
+                                              <small>22 september 2019</small>
+                                            </div>
+                                            <div>
+                                              <small>Technology</small>
+                                            </div>
+                                          </p>
+                                      </div>
+                                    </div>
+                                    <a href="article-sample.html" class="overlay-fade">
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                      <div class="container-fluid p-0">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                  <div class="image-container">
+                                    <div class="row">
+                                      <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="container-fluid p-3">
+                                          <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                        </div>
+                                      </div>
+                                      <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="container-fluid p-3">
+                                          <h4 class="">Why Having A Website Is Important</h4>
+                                          <p>
+                                              <div>
+                                                <small>22 september 2019</small>
+                                              </div>
+                                              <div>
+                                                <small>Technology</small>
+                                              </div>
+                                            </p>
+                                        </div>
+                                      </div>
+                                      <a href="article-sample.html" class="overlay-fade">
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                        </div>  
+                      <div class="container-fluid p-0">
+                                  <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="image-container">
+                                      <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                          <div class="container-fluid p-3">
+                                            <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                          </div>
+                                        </div>
+                                        <div class="col-lg-12 col-md-12 col-sm-12">
+                                          <div class="container-fluid p-3">
+                                            <h4 class="">Why Having A Website Is Important</h4>
+                                            <p>
+                                                <div>
+                                                  <small>22 september 2019</small>
+                                                </div>
+                                                <div>
+                                                  <small>Technology</small>
+                                                </div>
+                                              </p>
+                                          </div>
+                                        </div>
+                                        <a href="article-sample.html" class="overlay-fade">
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                        </div>
+                      <div class="container-fluid p-0">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                          <div class="image-container">
+                            <div class="row">
+                              <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="container-fluid p-3">
+                                  <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                                </div>
+                              </div>
+                              <div class="col-lg-12 col-md-12 col-sm-12">
+                                <div class="container-fluid p-3">
+                                  <h4 class="">Why Having A Website Is Important</h4>
+                                  <p>
+                                      <div>
+                                        <small>22 september 2019</small>
+                                      </div>
+                                      <div>
+                                        <small>Technology</small>
+                                      </div>
+                                    </p>
+                                </div>
+                              </div>
+                              <a href="article-sample.html" class="overlay-fade">
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+              <!-- END ROW -->
+            </div>
+            <ul class="pagination justify-content-center mt-3">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            <!-- END LATEST ARTICLE -->
           </div>
-        </a>
-        <a class="card bg-warning" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 2</p>
+
+          <!-- RIGHT SIDE COLUMN-->
+          <div class="col-lg-4 col-md-4 col-sm-12">
+
+            <!-- FEATURED CARD -->
+            <div class="card my-4 p-0">
+                <h4 class="card-header text-center">Featured Articles</h4>
+                <div class="card-body">
+              <!-- Article 1 -->
+              <div class="container-fluid p-0">
+                  <div class="">
+                      <div class="image-container">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="container p-3">
+                              <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="container p-3">
+                              <h4 class="">Why Having A Website Is Important</h4>
+                            </div>
+                          </div>
+                          <a href="article-sample.html" class="overlay-fade">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+               
+              <!-- Article 2 -->
+              <div class="container-fluid p-0">
+                  <div class="">
+                      <div class="image-container">
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="container p-3">
+                              <img src="img/importance-of-a-website.jpg" class="img-fluid b-logo rounded mx-auto d-block" width="100%">
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-sm-12">
+                            <div class="container p-3">
+                              <h4 class="">Why Having A Website Is Important</h4>
+                            </div>
+                          </div>
+                          <a href="article-sample.html" class="overlay-fade">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+              </div>
+              </div>
+            <!-- END FEATURED CARD -->
+
           </div>
-        </a>
-        <a class="card bg-success" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 3</p>
+
+          <!-- Categories Widget -->
+          <div class="card my-4 p-0">
+              <h5 class="card-header text-center">Categories</h5>
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                          <a class="nav-link text-black" href="category-technology.html">TECHNOLOGY 
+                              <span class="badge badge-primary badge-pill float-right">1</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="nav-link disabled" href="#">UNFINISHED
+                              <span class="badge badge-primary badge-pill float-right">0</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="nav-link disabled" href="#">UNFINISHED
+                              <span class="badge badge-primary badge-pill float-right">0</span>
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    <ul class="list-unstyled mb-0">
+                      <li>
+                          <a class="nav-link disabled" href="#">UNFINISHED
+                              <span class="badge badge-primary badge-pill float-right">0</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="nav-link disabled" href="#">UNFINISHED
+                              <span class="badge badge-primary badge-pill float-right">0</span>
+                          </a>
+                      </li>
+                      <li>
+                          <a class="nav-link disabled" href="#">UNFINISHED
+                              <span class="badge badge-primary badge-pill float-right">0</span>
+                          </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- END FEATURED CARD -->
+
           </div>
-        </a>
-        <a class="card bg-danger" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 4</p>
-          </div>
-        </a>  
-        <a class="card bg-light" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 5</p>
-          </div>
-        </a>
-        <a class="card bg-info" href="#">
-          <div class="card-body text-center">
-            <p class="card-text">Article 6</p>
-          </div>
-        </a>
-      </div>
+
+          <!-- END RIGHT COLUMN -->
+
+        </div>
+        <!-- END ROW -->
+
+        
+          
+      </section>
+
+    <!-- END MAIN CONTENT CONTAINER -->
     </div>
-  </section>
+
+  
 
   <!-- FOOTER -->
   <section id="footer" class="section-padding">
@@ -323,6 +477,7 @@
 
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
 
 </body>
 </html>
