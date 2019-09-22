@@ -43,9 +43,9 @@
   transform: scale(1);
 }
 
-.overlay-text {
+.overlay-text,
+.overlay-text-small {
   color: white;
-  font-size: 30px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -53,4 +53,11 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.overlay-text {
+  font-size: 30px;
+}
+.overlay-text-small {
+  font-size: 15px;
 }
